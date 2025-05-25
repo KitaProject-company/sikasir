@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('stock_transactions', function (Blueprint $table) {
             $table->id();
+            $table->string('type');
+            $table->integer('quantity');
+            $table->text('note');
             $table->timestamps();
         });
     }

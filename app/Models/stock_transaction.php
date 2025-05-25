@@ -9,4 +9,10 @@ class stock_transaction extends Model
 {
     /** @use HasFactory<\Database\Factories\StockTransactionFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'type',
+        'quantity',
+        'note',
+    ];
 }

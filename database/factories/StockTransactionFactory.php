@@ -16,8 +16,11 @@ class StockTransactionFactory extends Factory
      */
     public function definition(): array
     {
+        $input = ['in', 'out'];
         return [
-            //
+            'type' => fake()->randomElement($input),
+            'quantity' => fake()->randomDigit(),
+            'note' => fake()->paragraph(),
         ];
     }
 }
