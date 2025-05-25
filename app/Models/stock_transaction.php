@@ -14,5 +14,7 @@ class stock_transaction extends Model
         'type',
         'quantity',
         'note',
+        'product_id',
+        'user_id',
     ];
 }
